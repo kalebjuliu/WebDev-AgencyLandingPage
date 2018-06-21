@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  overflow-x: hidden;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 5rem;
+  text-align: left;
+}
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.fullscreen-video-wrap video{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3f1a4d;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.header-content h1 {
+  margin-top: 10px;
+  font-size: 100px;
+  font-weight: 100;
+  line-height: 7rem;
+}
+
+.header-content p {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.btn {
+
+  padding: 1em;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #9863e8;
+}
+
+.solid {
+  border: 2px solid #9863e8;
+}
+
+.outline {
+  border: 2px solid #9863e8;
+
+}
+
+@media(max-width: 650px) {
+  .header-content h1 {
+    font-size: 50px;
+    line-height: 4.5rem;
+  }
+  .container {
+    padding-left: 2.5rem;
+  }
+  .header-content p {
+    font-size: 9px;
+  }
+}
+@media(max-width: 500px) {
+  .header-content h1 {
+    font-size: 30px;
+    line-height: 3rem;
+  }
+  .container {
+    padding-left: 1.5rem;
+  }
+  .header-content p {
+    font-size: 9px;
+    letter-spacing: normal;
+  }
+}
+
+
+
+
+
+
+/* Sweep To Top */
+.hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #9863e8;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+  color: white;
+}
+.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* About Us Section */
+.section-a {
+  max-width: 960px;
+  margin: auto;
+
+}
+
+.container-1 {
+  max-width: 960px;
+  margin: 125px auto 50px auto;
+  padding: 1rem;
+}
+
+.container-1 p {
+  text-align: center;
+  font-family: 'Averta';
+  font-weight: 500;
+}
+/* Card Styling */
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+
+}
+
+#section-b {
+  padding: 1em 1em 1em;
+
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b li {
+  margin-bottom: 1.5em;
+  background-color:#ecf3f3 ;
+  font-size: 15px;
+  color: black;
+  border-radius: 5px;
+
+  box-shadow: 0px 80px 110px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-content{
+  text-align: center;
+  padding: 1.3em;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-column-gap: 2em;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+  #section-b ul {
+    grid-column: 2/4;
+  }
+  #section-b ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+  #section-b li {
+  width: 31%;
+
+  }
+}
+
+
+
+.container-2{
+  max-width: 960px;
+  margin: 125px auto 50px auto;
+  text-align: center;
+  font-family: 'Averta';
+  font-weight: 500;
+}
